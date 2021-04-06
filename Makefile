@@ -15,4 +15,9 @@ zip:
 	@zip -q -r mysh.zip . -x .git/\* .vscode/\* .clang-format .gitignore mysh
 	@echo "Done. Please upload mysh.zip to Gradescope."
 
-.PHONY: all clean zip
+format:
+	@echo "Reformatting source code."
+	@clang-format -i --style=file $(wildcard *.c) $(wildcard *.h)
+	@echo "Done."
+
+.PHONY: all clean zip format
