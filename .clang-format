@@ -6,7 +6,6 @@ PointerAlignment: Left
 AlignOperands: true
 BreakConstructorInitializers: AfterColon
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
-AllowShortBlocksOnASingleLine: Never
 AllowShortFunctionsOnASingleLine: None
 BinPackArguments: true
 BinPackParameters: false
@@ -19,8 +18,7 @@ IncludeCategories:
   # System Includes
   - Regex: '^<[[:alnum:]./_]+\.h>'
     Priority: 1
-  
+
   # Local Includes
   - Regex: '.*'
     Priority: 2
-  
